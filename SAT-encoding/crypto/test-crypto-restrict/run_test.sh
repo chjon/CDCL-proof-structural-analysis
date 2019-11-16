@@ -51,7 +51,7 @@ echo "Generating CNF from SHA-1 instance..."
 $CRYPTO_EXEC -A counter_chain -r $NUM_SHA_ROUNDS --random_target --print_target |
 $CRYPTO_EXEC -A counter_chain -r $NUM_SHA_ROUNDS > $GENERATED_CNF
 
-# TODO: Flip n bits in the generated CNF
+# Flip n bits in the generated CNF
 echo "Restricting CNF..."
 $RESTRICT_EXEC "$NUM_TO_RESTRICT" "$GENERATED_CNF" "$RESTRICTED_CNF"
 
