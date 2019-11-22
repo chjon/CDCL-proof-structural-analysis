@@ -1,5 +1,5 @@
 #!/bin/bash
-# ./run_test.sh ../main ../../../../glucose-3.0D/core/glucose ../../../../drat-trim/drat-trim
+# ./run_test.sh 20 352 ../main ../../../../glucose-3.0D/core/glucose ../../../../drat-trim/drat-trim
 
 if [[ $# -ne 6 ]]; then
     echo "Usage: $0 <NUM_SHA_ROUNDS> <NUM_TO_RESTRICT> <CRYPTO_EXEC> <RESTRICT_EXEC> <GLUCOSE_EXEC> <DRAT_EXEC>"
